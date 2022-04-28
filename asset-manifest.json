@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ReadMeGen/static/css/main.40ec9875.css",
+    "main.js": "/ReadMeGen/static/js/main.209f26e3.js",
+    "index.html": "/ReadMeGen/index.html",
+    "main.40ec9875.css.map": "/ReadMeGen/static/css/main.40ec9875.css.map",
+    "main.209f26e3.js.map": "/ReadMeGen/static/js/main.209f26e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40ec9875.css",
+    "static/js/main.209f26e3.js"
+  ]
+}

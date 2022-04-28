@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Oswald:wght@500&family=Zilla+Slab:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .preview {
+        @apply border-2 w-80 h-80 md:w-[25rem] md:h-[25rem] text-sm md:text-base text-justify p-5 overflow-x-hidden overflow-y-auto shadow-lg;
+    }
+
+    .preview  h1 {
+        @apply text-2xl font-extrabold font-oswald my-1 leading-10;
+    }
+
+    .preview h2 {
+        @apply text-xl font-bold font-oswald my-1 leading-10;
+    }
+
+    .preview p {
+        @apply text-lg font-montserrat font-normal my-2;
+    }
+
+    .preview strong {
+        @apply font-bold;
+    }
+
+    .preview a {
+        @apply text-base font-zilla underline font-normal;
+    }
+    .preview a:hover {
+        @apply text-blue-400;
+    }
+
+    .preview code {
+        @apply bg-slate-200 p-1 rounded-md text-sm font-mono my-1;
+    }
+
+    .preview ul {
+        @apply list-disc my-1 px-5;
+    }
+    .preview ol {
+        @apply list-decimal my-1 px-5;
+    }
+}

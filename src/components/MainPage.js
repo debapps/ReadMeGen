@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import ShowDown from "showdown";
+import { useAlert } from "react-alert";
 
 export default function MainPage() {
+  // Get the alert object.
+  const alert = useAlert();
+
   //useState hook for input text.
   const [text, setText] = useState(null);
 
@@ -25,16 +29,19 @@ export default function MainPage() {
   function handleHTMLCopy() {
     let htmlText = converter.makeHtml(text);
     navigator.clipboard.writeText(htmlText);
+    alert.success("Copied HTML to Clipboard!");
   }
 
   // This function copies the markdown text to clipboard.
   function handleMarkCopy() {
     navigator.clipboard.writeText(text);
+    alert.success("Copied Markdown Text to Clipboard!");
   }
 
   // This function clears the input textbox.
   function handleClearText() {
     setText("");
+    alert.success("Cleared Input Text.");
   }
 
   return (
